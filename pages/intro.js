@@ -25,7 +25,7 @@ const Intro = () => {
       <div className="aali_tm_all_wrap" data-magic-cursor="show">
         <div className="aali_tm_intro">
           <div className="short_info">
-            <img src="img/logo/dark.png" alt="Intro Image" />
+            <img src="img/logo/logo-footer.png" alt="Intro Image" />
             <h3>Personal Portfolio Template</h3>
           </div>
           <span className="intro_line" />

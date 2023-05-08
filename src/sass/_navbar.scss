@@ -70,7 +70,6 @@
 	color: $dark;
 	display: inline-block;
 	padding: 0px 0px;
-	font-family: "Josefin Sans";
 	font-weight: 600;
 }
 .aali_tm_mobile_menu .hamburger{
@@ -85,7 +84,7 @@
 }
 
 /*---------------------------------------------------*/
-/*	03) AALI HEADER
+/*	03) Folioz Header
 /*---------------------------------------------------*/
 
 .aali_tm_header{
@@ -167,4 +166,83 @@
 }
 .aali_tm_header.animate .menu ul li a:hover{
 	color: $primary;
+}
+
+@media (max-width: 1400px) {
+	body{font-size: 16px;}
+	.container{max-width: 1070px;}
+	.aali_tm_header .logo img{max-width: 85px;}
+	.aali_tm_header .menu ul li{margin-right: 30px;}
+	.aali_tm_header .inner{padding: 20px 0px;}
+	.aali_tm_header.animate .inner{padding: 15px 0px;}
+}
+
+@media (max-width: 1040px) {
+	.container{padding: 0px 20px;}
+	.aali_tm_header{display: none;}
+	.aali_tm_mobile_menu{display: block;}
+
+}
+
+
+body.intro #preloader:before,
+body.intro #preloader:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    z-index: -1;
+    background-color: $dark;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+body.intro #preloader:after{
+    left: auto;
+    right: 0;
+}
+body.intro #preloader .loader_line{
+    margin: auto;
+    width: 1px;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: all 0.8s ease 0s;
+    -o-transition: all 0.8s ease 0s;
+    transition: all 0.8s ease 0s;
+}
+body.intro .loader_line:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 1px;
+    height: 0%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background-color: $white;
+    -webkit-animation: lineheight 1000ms ease-in-out 0s forwards;
+    -o-animation: lineheight 1000ms ease-in-out 0s forwards;
+    animation: lineheight 1000ms ease-in-out 0s forwards;
+}
+body.intro .loader_line:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background-color: #ddd;
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
+    -webkit-animation: lineround 1200ms linear 0s infinite;
+    -o-animation: lineround 1200ms linear 0s infinite;
+    animation: lineround 1200ms linear 0s infinite;
+    animation-delay: 2000ms;
 }

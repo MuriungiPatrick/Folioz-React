@@ -21,9 +21,11 @@
      a {
         color: $white;
         text-decoration: none;
+        text-transform: capitalize;
         
-      &:hover {
-        color: $primary;
+        &:hover {
+          color: $primary;
+          text-decoration: underline;
       }
   
       
@@ -86,7 +88,7 @@
   
   /// START BOTTOM FOOTER SECTION 
     .footer-bottom {
-      background-color: $gray-800;
+      background-color: rgba($gray-900, .6);
       padding: 2rem 0;
   
       &__copyright {

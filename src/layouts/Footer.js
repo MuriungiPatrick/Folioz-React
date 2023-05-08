@@ -34,7 +34,7 @@ const Footer = () => {
 </div>
 <div className="footer-bottom">
     <div className="container">
-          <div className="copyright_inner">
+          <div className="copyright">
             <div className="bottom">
               <div className="center">
                 <p>
