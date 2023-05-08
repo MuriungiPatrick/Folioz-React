@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import { scroll_, stickyNav } from "../utilits";
-// import  'bootstrap/dist/css/bootstrap-grid.css'
-import { Button, Alert } from 'react-bootstrap';
+
 
 const Header = ({ dark }) => {
   useEffect(() => {
@@ -15,7 +14,7 @@ const Header = ({ dark }) => {
           {dark ? (
             <div className="logo">
               <a href="#">
-                <img src="img/logo/logo.png" alt="" />
+                <img src="img/logo/logo.png" alt="logo" />
               </a>
             </div>
           ) : (
@@ -28,8 +27,7 @@ const Header = ({ dark }) => {
               </a>
             </div>
           )}
-         <Button className="primary">Button</Button>  
-         <Alert variant="success">Alert Button!</Alert>  
+        
           <div className="menu">
             <ul className="anchor_nav">
               <li className="current">
