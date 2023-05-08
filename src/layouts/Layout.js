@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { Fragment, useEffect } from "react";
 import {
+  aali_tm_moving_animation,
   aTagClick,
   dataImage,
   wowJsAnimation,
@@ -12,15 +13,16 @@ import MobileMenu from "./MobileMenu";
 import Preloader from "./Preloader";
 
 const Layout = ({ children, headName, dark }) => {
-    useEffect(() => {
+  useEffect(() => {
     dataImage();
     wowJsAnimation();
+    aali_tm_moving_animation();
     aTagClick();
   });
   return (
     <Fragment>
       <Head>
-        <title>Folioz.com | {headName ? headName : "Home"} </title>
+        <title>Folioz | {headName ? headName : "Home"} </title>
       </Head>
       <Preloader />
       <div className="aali_tm_all_wrap" data-magic-cursor="show">

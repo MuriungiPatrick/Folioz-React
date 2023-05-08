@@ -1,0 +1,170 @@
+@use '../custom' as *;
+@use '../sass/mixins' as *;
+
+/*---------------------------------------------------*/
+/*	02) AALI MOBILE MENU
+/*---------------------------------------------------*/
+
+.aali_tm_mobile_menu{
+	width: 100%;
+	height: auto;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	display: none;
+	z-index: 10;
+}
+.aali_tm_mobile_menu .mobile_menu_inner{
+	width: 100%;
+	height: auto;
+	float: left;
+	clear: both;
+	background-color: $white;
+	border-bottom: 1px solid rgba(0,0,0,.1);
+	padding: 15px 20px 15px 20px;
+}
+.aali_tm_mobile_menu .mobile_in{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.aali_tm_mobile_menu .mobile_in .logo img{
+	max-width: 70px;
+	max-height: 50px;
+}
+.aali_tm_mobile_menu .trigger{
+	line-height: 0;
+	position: relative;
+	top: 3px;
+}
+.aali_tm_mobile_menu .dropdown{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	background-color: $white;
+	display: none;
+}
+.aali_tm_mobile_menu .dropdown .dropdown_inner{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	padding: 25px 40px;
+}
+.aali_tm_mobile_menu .dropdown .dropdown_inner ul{
+	margin: 0px;
+	list-style-type: none;
+}
+.aali_tm_mobile_menu .dropdown .dropdown_inner ul li{
+	margin: 0px;
+	float: left;
+	width: 100%;
+}
+.aali_tm_mobile_menu .dropdown .dropdown_inner ul li a{
+	text-decoration: none;
+	color: $dark;
+	display: inline-block;
+	padding: 0px 0px;
+	font-family: "Josefin Sans";
+	font-weight: 600;
+}
+.aali_tm_mobile_menu .hamburger{
+	padding: 0px !important;
+}
+.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before{
+	width: 30px !important;
+	height: 2px !important;
+}
+.hamburger-box{
+	width: 30px !important;
+}
+
+/*---------------------------------------------------*/
+/*	03) AALI HEADER
+/*---------------------------------------------------*/
+
+.aali_tm_header{
+	position: fixed;
+	z-index: 10;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.aali_tm_header .inner{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 30px 0px;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.aali_tm_header.animate{
+	background-color: $white;
+}
+.aali_tm_header.animate .inner{
+	padding: 22px 0px;
+}
+.aali_tm_header .logo img{
+	max-width: 120px;
+}
+.aali_tm_header .logo .light{display: block;}
+.aali_tm_header .logo .dark{display: none;}
+.aali_tm_header.animate .logo .light{display: none;}
+.aali_tm_header.animate .logo .dark{display: block;}
+.aali_tm_header .menu ul{
+	margin: 0px;
+	list-style-type: none;
+}
+.aali_tm_header .menu ul li{
+	margin: 0px 45px 0px 0px;
+	display: inline-block;
+}
+.aali_tm_header .menu ul li:last-child{
+	margin-right: 0px;
+}
+.aali_tm_header .menu ul li a{
+	text-decoration: none;
+	color: $white;
+	font-family: "Josefin Sans";
+	font-weight: 600;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.aali_tm_header .menu ul li a:hover{
+	color: $primary;
+}
+.aali_tm_header .menu ul li.current a{
+	color: $primary;
+}
+.aali_tm_header.animate .menu ul li.current a{
+	color: $primary;
+}
+.aali_tm_header.animate .menu ul li a{
+	color: $secondary;
+}
+.aali_tm_header.animate .menu ul li a:hover{
+	color: $primary;
+}

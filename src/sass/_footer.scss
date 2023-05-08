@@ -3,60 +3,16 @@
 
 
 .footer {
-    // margin-top: 5rem;
+    position: relative;
+    margin-top: 5rem;
     background-color: $dark;
     color: $white; 
-    position: relative;
   
     i {
       font-size: 1rem;
     }
     
-  
-    // START CONTACT BOX WITH ICONS STYLES
-  .contact-box {
-    position: relative;
-    text-decoration: none;
-  
-  
-    .icon {
-      padding: 0 0.3rem;
-      justify-content: baseline;
-  
-      i {
-        font-size: 1.5rem;
-      }
-          
-    } 
-    
-    
-    .info {
-        padding: 0.5rem 1rem;   
-        align-items: center;
-        
-  
-          .title {
-            text-transform: uppercase;
-            font-weight: 600;
-            align-items: center;
-            font-size: 1rem;           
-            
-          }
-          
-          .sub-title {
-              font-size: 0.8rem;
-              // color: $gray-400;
-              text-transform: capitalize;
-              // font-weight: 600;      
-            }
-  
-          
-  
-    }
-  
-  
-    
-  }
+
   
   .footer-center {
     padding: 1rem;
@@ -130,8 +86,8 @@
   
   /// START BOTTOM FOOTER SECTION 
     .footer-bottom {
-      background-color: $dark;
-      // padding: 3rem 0;
+      background-color: $gray-800;
+      padding: 2rem 0;
   
       &__copyright {
         font-size: 1rem;

@@ -1,13 +1,9 @@
-import { download } from "../svgImage";
+import React from 'react'
 
-const About = () => {
+function About() {
   return (
-    
-    <p>
-      very passionate and dedicated to my work </p>
-  
-            
- 
-  );
-};
-export default About;
+    <div>About</div>
+  )
+}
+
+export default About

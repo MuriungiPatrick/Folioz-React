@@ -20,10 +20,10 @@ const Header = ({ dark }) => {
           ) : (
             <div className="logo">
               <a className="light" href="#">
-                <img src="img/logo/logo.png" alt="aali image" />
+                <img src="img/logo/logo-footer.png" alt="Folioz image" />
               </a>
               <a className="dark" href="#">
-                <img src="img/logo/dark.png" alt="aali image" />
+                <img src="img/logo/logo.png" alt="Folioz image" />
               </a>
             </div>
           )}
