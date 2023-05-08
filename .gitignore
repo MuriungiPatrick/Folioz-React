@@ -1,0 +1,8 @@
+.sass-cache
+node_modules/
+scss/*.scss
+
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/
+dist/
