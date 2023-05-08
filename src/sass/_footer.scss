@@ -1,0 +1,197 @@
+@use '../custom' as *;
+@use '../sass/mixins' as *;
+
+
+.footer {
+    // margin-top: 5rem;
+    background-color: $dark;
+    color: $white; 
+    position: relative;
+  
+    i {
+      font-size: 1rem;
+    }
+    
+  
+    // START CONTACT BOX WITH ICONS STYLES
+  .contact-box {
+    position: relative;
+    text-decoration: none;
+  
+  
+    .icon {
+      padding: 0 0.3rem;
+      justify-content: baseline;
+  
+      i {
+        font-size: 1.5rem;
+      }
+          
+    } 
+    
+    
+    .info {
+        padding: 0.5rem 1rem;   
+        align-items: center;
+        
+  
+          .title {
+            text-transform: uppercase;
+            font-weight: 600;
+            align-items: center;
+            font-size: 1rem;           
+            
+          }
+          
+          .sub-title {
+              font-size: 0.8rem;
+              // color: $gray-400;
+              text-transform: capitalize;
+              // font-weight: 600;      
+            }
+  
+          
+  
+    }
+  
+  
+    
+  }
+  
+  .footer-center {
+    padding: 1rem;
+  
+  
+     a {
+        color: $white;
+        text-decoration: none;
+        
+      &:hover {
+        color: $primary;
+      }
+  
+      
+    }
+  
+  
+  }
+  
+  .footer-sm {
+  
+    a {
+      color: $primary;
+  
+       i {
+          font-size: 1.5rem;
+          padding-left: 1rem;
+  
+          
+  
+          &:hover {
+            color: $white;
+          }
+  
+        }
+  
+    } 
+    
+  }
+       
+}
+  
+  .f-list {
+        display: block;
+        list-style-type: none;
+        position: relative;
+  
+          & > li {       
+            color: $white;
+            margin-bottom: 0.5rem;
+                             
+  
+          a {
+            color: $gray-200;
+            transition: all .3s ease;  
+  
+            &:hover {
+              padding-bottom: 4rem;
+              color: $primary;
+              transform: skewY(10deg) skewX(5deg) scale(1.1);
+              transition:all .3s;
+              
+          }
+  
+        }     
+                        
+    }            
+  
+  } 
+  
+  
+  /// START BOTTOM FOOTER SECTION 
+    .footer-bottom {
+      background-color: $dark;
+      // padding: 3rem 0;
+  
+      &__copyright {
+        font-size: 1rem;
+        color: $gray-400;
+        
+         a {
+          color: $primary;
+          transition: all .3s ease;  
+          text-decoration: none;
+  
+          &:hover {
+            color: $white;
+            text-decoration: underline;
+            
+          }
+  
+        }  
+  
+      }
+      &__legalstuff {
+        padding-top: 1rem;
+        text-align: center;
+  
+        @media (min-width: 768px) {
+          text-align: end;
+        }
+  
+        
+        a {
+          color: $primary;
+          transition: all .3s ease;  
+          text-decoration: none;
+          
+          
+          &:hover {
+            color: $white;
+            text-decoration: underline;
+            
+          }
+  
+        }  
+  
+      }
+  
+    }
+
+
+// STYLE THE BACK TO TOP BUTTON 
+.back-to-top {
+    position: fixed;
+    width: 3rem;
+    height: 3rem;
+    right: 1.875rem;
+    bottom: 2rem;
+    z-index: 9999;
+
+    i {
+        color: $white;
+        font-size: 1rem;
+        @include absoluteCenter;
+    }
+    
+}

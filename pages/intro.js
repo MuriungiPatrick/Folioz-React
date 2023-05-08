@@ -19,7 +19,7 @@ const Intro = () => {
   return (
     <Fragment>
       <Head>
-        <title>Aali | intro</title>
+        <title>Folioz | intro</title>
       </Head>
       <Preloader />
       <div className="aali_tm_all_wrap" data-magic-cursor="show">
