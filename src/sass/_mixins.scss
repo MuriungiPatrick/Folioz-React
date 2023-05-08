@@ -1,0 +1,35 @@
+@use '../custom' as *;
+
+// GRADIENT MIXIN 
+@mixin gradient {
+    background: linear-gradient(to right, rgba($primary, 0.95), rgba($secondary, 0.95));
+    
+}
+
+// ABSOLUTE CENTER 
+@mixin absoluteCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+// TRANSITION PROPERTY 
+@mixin transitionProperty {
+    transition-duration: 1s;
+    transition-property: all;
+}
+
+@mixin iconcircle {
+    line-height: 1.3;
+    position: relative;
+    margin-top: -3.75rem;
+    width: 5rem;
+    height: 5rem;
+    background-color: $primary;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 1rem;
+    @include transitionProperty;
+
+}

@@ -1,5 +1,5 @@
 @use '../custom' as *;
-// @use '../components/mixins' as *;
+@use '../sass/mixins' as *;
 
 .intro-section {
     background-color: $secondary;

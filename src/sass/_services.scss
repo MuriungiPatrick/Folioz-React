@@ -1,0 +1,85 @@
+@use '../custom' as *;
+@use '../sass/mixins' as *;
+
+.mt-6 {
+	margin-top: 5rem;
+}
+.mb-6 {
+	margin-bottom: 5rem;
+}
+
+.services-section {
+	background-color: $white;
+    padding: 5rem 0;
+	// margin: 8rem 0;
+}
+
+.services {
+	@include transitionProperty;
+	width: 100%;
+	padding: 1rem;
+    margin-bottom: 3.75rem;
+	background: $white !important;
+	animation: pats-animated 2s;
+
+    
+	.icon {
+        @include iconcircle;
+        @include transitionProperty;
+        
+		span {
+			font-size: 2rem;
+			color: $white;
+        }
+        
+	}
+	.service-body {
+        animation-name: moveInUp;
+		animation-duration: 10s;
+
+        a {
+            text-decoration: none;
+            color: $gray-800;
+
+            &:hover {
+                text-decoration: underline;
+            }
+
+        }
+
+	
+
+        i {
+        	color: $gray-800;
+        }
+        
+	}
+	&:hover {
+        background: $primary !important;
+        color: $white !important;
+        
+		.icon {
+			background: $white;
+            margin-left: 1.25rem;
+            
+			span {
+				color: $primary;
+            }
+            
+        }
+        
+		h3 {
+			color: $white;
+        }
+
+        a {
+            color: $white;
+        }
+        
+		.service-body {
+			color: $white;
+        }
+        
+    }
+    
+}

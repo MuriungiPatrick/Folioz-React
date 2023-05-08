@@ -5,7 +5,7 @@ const Footer = () => {
           <div className="row">
             <div className="col-lg-6 col-md-6">
               <div className="logo">
-                <img src="img/logo/downfric.png" alt="logo image" />
+                <img src="img/logo/logo-footer.png" alt="logo image" />
               </div>
               <div className="social">
                 <span>Connect</span>
