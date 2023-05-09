@@ -31,7 +31,7 @@ const Header = ({ dark }) => {
           <div className="menu">
             <ul className="anchor_nav">
               <li className="current">
-                <a href="#home">Home</a>
+                <a href="/">Home</a>
               </li>
               <li>
                 <a href="#about">About</a>
@@ -49,7 +49,7 @@ const Header = ({ dark }) => {
                 <a href="#blog">Blog</a>
               </li>
               <li>
-                <a href="#contact">Contact</a>
+                <a href="/contact">Contact</a>
               </li>
             </ul>
           </div>
