@@ -1,0 +1,11 @@
+@use '../custom' as *;
+@use '../sass/mixins' as *;
+
+
+.faq-section {
+    position: relative;
+    padding: 5rem 0;
+    background-color: $white;
+    // @include gradient;
+
+}

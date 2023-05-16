@@ -1,0 +1,21 @@
+@use '../custom' as *;
+@use '../sass/mixins' as *;
+
+
+.get-started {
+    padding: 4rem 0;
+    background-color: $gray-100;
+
+    .headline {
+        padding-bottom: 3rem;
+        text-align: center;
+        
+        @media (min-width: 768px) {
+            text-align: start;
+        }
+    
+    }
+
+    
+    
+}
