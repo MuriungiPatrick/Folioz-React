@@ -1,105 +1,159 @@
-import SwiperCore, { Navigation, Pagination } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
-SwiperCore.use([Pagination, Navigation]);
-const Testimonial = () => {
-  const props = {
-    slidesPerView: 1,
-    loop: true,
-    pagination: false,
-    navigation: {
-      prevEl: ".prev_button",
-      nextEl: ".next_button",
-    },
-  };
+import React from 'react'
+
+function Testimonial() {
+
   return (
-    <div className="aali_tm_section" id="testimonial">
-      <div className="aali_tm_testimonials">
-        <div className="left">
-          <div className="image">
-            <img src="img/hero/2.png" alt="aali image" />
-          </div>
-        </div>
-        <div className="right">
-          <div className="right_in">
-            <div
-              className="aali_tm_main_title"
-              data-text-align="left"
-              data-color="light"
-            >
-              <span>Testimonial</span>
-              <h3>What People Say</h3>
-            </div>
-            <Swiper {...props} className="owl-carousel">
-              <SwiperSlide className="item">
-                <div className="text">
-                  <p>
-                    I had a problem finding something, asked the support team,
-                    got a reply and a solution within a few minutes. Brilliant
-                    support! Very happy with the website I bought.
-                  </p>
-                </div>
-                <div className="name">
-                  <h3>
-                    Tom Anderson, <span>Customer</span>
-                  </h3>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide className="item">
-                <div className="text">
-                  <p>
-                    Good overall template. I am getting back into coding and had
-                    a simple question for the author. They responded within 5
-                    minutes and answered my question. Highly recommend!
-                  </p>
-                </div>
-                <div className="name">
-                  <h3>
-                    Jessica Parker, <span>App Developer</span>
-                  </h3>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide className="item">
-                <div className="text">
-                  <p>
-                    I {`can't`} believe I got support and my problem resolved in
-                    just minutes from posting my question. Simply amazing team
-                    and amazing theme! Thank you for all!
-                  </p>
-                </div>
-                <div className="name">
-                  <h3>
-                    MacLaren, <span>Freelancer</span>
-                  </h3>
-                </div>
-              </SwiperSlide>
-            </Swiper>
-            <div className="direct">
-              <a className="prev_button">
-                <i className="icon-left" />
-              </a>
-              <a className="next_button">
-                <i className="icon-right" />
-              </a>
-            </div>
-          </div>
-        </div>
-        <span className="border">
-          <span
-            className="in moving_effect"
-            data-direction="x"
-            data-reverse="yes"
-          />
-        </span>
-        <span
-          className="square moving_effect"
-          data-direction="y"
-          data-reverse="yes"
-        />
-        <span className="quote moving_effect" data-direction="x">
-          <i className="icon-quote-left" />
-        </span>
+    <section className="testimonials">
+  <div className="container">
+    <div className="row text-center">
+      <div className="topic-intro">
+        <h6>Customers review</h6>
       </div>
+       <h3 className="display-3 fw-bold text-capitalize">testimonials</h3>
+       <div className="heading-line mx-auto"></div>
+       <p className="text-capitalize">What our clients are saying</p>     
     </div>
+  <div className="row justify-content-center text-white mt-5">
+    <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel">
+      <ol className="carousel-indicators">
+        <li data-bs-target="#carousel" data-bs-slide-to="0" className="active bg-primary rounded-circle"></li>
+        <li data-bs-target="#carousel" data-bs-slide-to="1" className="bg-primary rounded-circle"></li>
+        
+      </ol>
+      <div className="carousel-inner">
+        <div className="carousel-item active">
+          <div className="row">
+            <div className="col-lg-4 col-md-6 col-sm-12">
+              <div className="t-card shadow">
+                  <i className="bi bi-chat-quote" aria-hidden="true"></i>
+                    <p className="lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                      Quam, culpa eius! Ea voluptatibus mollitia hic eos.  
+                      </p>
+                      <br />                          
+                   <div className="d-flex justify-content-evenly">
+                    <div className="client-img">
+                      <img src="img/testimonials/client-1.jpg" 
+                      className="rounded-circle img-fluid" />
+                    </div>                                
+                  <div className="name mt-2">
+                  <h5>Jack Mathews</h5>
+                  <p className="fw-light">Global Brand manager - <span>Artc Cafe</span></p>
+                    </div>
+                   </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 col-sm-12">
+              <div className="t-card shadow">
+                <i className="bi bi-chat-left-quote" aria-hidden="true"></i>
+                  <p className="lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Quam, culpa eius! Ea voluptatibus mollitia hic eos.  
+                    </p>
+                    <br />                          
+                    <div className="d-flex justify-content-evenly">
+                      <div className="client-img">
+                        <img src="img/testimonials/client-3.jpg" 
+                        className="rounded-circle img-fluid" />
+                      </div>                                
+                    <div className="name mt-2">
+                        <h5>Esther Zawadi</h5>
+                        <p className="fw-light">digital strategist - <span>Bnb africa</span></p>
+                    </div>
+                    </div>
+                </div>
+              </div>
+            <div className="col-lg-4 col-md-6 col-sm-12">
+              <div className="t-card shadow">
+                  <i className="bi bi-chat-left-quote" aria-hidden="true"></i>
+                    <p className="lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                      Quam, culpa eius! Ea voluptatibus mollitia hic eos.  
+                      </p>
+                      <br />                          
+                    <div className="d-flex justify-content-evenly">
+                      <div className="client-img">
+                        <img src="img/testimonials/client-1.jpg" 
+                        className="rounded-circle img-fluid" />
+                  </div>                                
+                    <div className="name mt-2">
+                    <h5>Uhuru Kenyatta</h5>
+                    <p className="fw-light">MD - <span>Brookside Diaries</span></p>
+                    </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>                   
+              </div>
+        <div className="carousel-item">
+          <div className="row">
+            <div className="col-lg-4 col-md-6 col-sm-12">
+              <div className="t-card shadow">
+                  <i className="bi bi-chat-left-quote" aria-hidden="true"></i>
+                    <p className="lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                      Quam, culpa eius! Ea voluptatibus mollitia hic eos.  
+                      </p>
+                      <br />                          
+                      <div className="d-flex justify-content-evenly">
+                        <div className="client-img">
+                          <img src="img/testimonials/client-2.jpg" 
+                          className="rounded-circle img-fluid" />
+                    </div>                                
+                      <div className="name mt-2">
+                      <h5>Mary Kilobi</h5>
+                      <p className="fw-light">Sales Manager - <span>Kiko Meko</span></p>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+            <div className="col-lg-4 col-md-6 col-sm-12">
+              <div className="t-card shadow">
+                  <i className="bi bi-chat-left-quote" aria-hidden="true"></i>
+                    <p className="lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                      Quam, culpa eius! Ea voluptatibus mollitia hic eos.  
+                      </p>
+                      <br />                          
+                   <div className="d-flex justify-content-evenly">
+                    <div className="client-img">
+                      <img src="img/testimonials/client-5.jpg" className="rounded-circle img-fluid" />
+                    </div>                                
+                    <div className="name mt-2">
+                    <h5>Dr. Nyikal Miwani</h5>
+                    <p className="fw-light">Finance Manager - <span>Karen Hostpital</span></p>
+                    </div>
+                   </div>
+                  </div>
+                </div>
+            <div className="col-lg-4 col-md-6 col-sm-12">
+              <div className="t-card shadow">
+                  <i className="bi bi-chat-left-quote" aria-hidden="true"></i>
+                    <p className="lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                      Quam, culpa eius! Ea voluptatibus mollitia hic eos.  
+                      </p>
+                      <br />                          
+                      <div className="d-flex justify-content-evenly">
+                        <div className="client-img">
+                          <img src="img/testimonials/client-3.jpg" className="rounded-circle img-fluid" />
+                        </div>                                
+                        <div className="name mt-2">
+                        <h5>Esther Zawadi</h5>
+                        <p className="fw-light">digital strategist - <span>Bnb africa</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>           
+              </div>
+            </div>          
+          </div>
+          <div className="row text-center mt-5">
+            <div className="col-lg-12 col-md-12">
+              <a className="bi bi-chevron-left btn btn-outline-primary" href="#carouselExampleCaptions"
+              data-bs-slide="prev"></a>
+            <a className="bi bi-chevron-right btn btn-outline-primary" href="#carouselExampleCaptions"
+              data-bs-slide="next"></a>
+            </div>
+          </div>        
+        </div>
+    </div>
+  </section>
   );
 };
 

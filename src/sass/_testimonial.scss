@@ -1,0 +1,64 @@
+@use '../custom' as *;
+@use '../sass/mixins' as *;
+
+.testimonials {
+    position: relative;
+    padding: 5rem 0;
+    background-color: $gray-200;
+    // @include gradient;
+
+    .t-card {
+        padding: 1rem;
+        background-color: rgba($white, 0.8);
+        border-radius: 0.625rem;
+        color: $dark;
+        height: auto;
+        text-align: center;
+        margin-bottom: 1rem;
+
+        .name {
+            margin-bottom: 0;
+            text-transform: capitalize;
+            
+            h5 {
+                font-weight: 500;
+            }
+
+            p {
+                font-size: 0.8rem;
+            }
+    
+        }
+
+        .client-img {
+            position: relative;
+
+            img {
+                max-width: 100%;
+                width: 60px;
+                height: 60px;
+                border: 3.5px solid $primary;
+            }
+        }
+    }
+    
+ 
+
+    
+
+    .quote-icon {
+        color: lighten($primary, 40%);
+
+            svg {
+                width: 10rem;
+                height: 10rem;
+            }
+    }
+
+}
+
+
+
+.carousel-indicators {
+    margin-bottom: -2rem !important;
+}

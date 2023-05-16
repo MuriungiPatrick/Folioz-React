@@ -1,8 +1,9 @@
-import Home from "../src/components/Home";
-import Service from "../src/components/Service";
-import About from "../src/components/About";
-import VideoSection from "../src/components/VideoSection";
-import Layout from "../src/layouts/Layout";
+import Home from "../src/components/Home"
+import Service from "../src/components/Service"
+import About from "../src/components/About"
+import Video from "../src/components/Video"
+import Testimonial from "../src/components/Testimonial"
+import Layout from "../src/layouts/Layout"
 
 
 const Index = () => {
@@ -11,7 +12,8 @@ const Index = () => {
         <Home />
         <Service />
         <About />
-        <VideoSection />
+        <Testimonial />
+        <Video />
       </Layout>
     );
   };
