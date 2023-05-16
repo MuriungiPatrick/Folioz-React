@@ -1,4 +1,5 @@
 import React from 'react'
+import { ChevronRight, ChevronLeft } from 'react-bootstrap-icons'
 
 function Testimonial() {
 
@@ -51,7 +52,7 @@ function Testimonial() {
                     <br />                          
                     <div className="d-flex justify-content-evenly">
                       <div className="client-img">
-                        <img src="img/testimonials/client-3.jpg" 
+                        <img src="img/testimonials/client-2.jpg" 
                         className="rounded-circle img-fluid" />
                       </div>                                
                     <div className="name mt-2">
@@ -70,7 +71,7 @@ function Testimonial() {
                       <br />                          
                     <div className="d-flex justify-content-evenly">
                       <div className="client-img">
-                        <img src="img/testimonials/client-1.jpg" 
+                        <img src="img/testimonials/client-3.jpg" 
                         className="rounded-circle img-fluid" />
                   </div>                                
                     <div className="name mt-2">
@@ -93,7 +94,7 @@ function Testimonial() {
                       <br />                          
                       <div className="d-flex justify-content-evenly">
                         <div className="client-img">
-                          <img src="img/testimonials/client-2.jpg" 
+                          <img src="img/testimonials/client-4.jpg" 
                           className="rounded-circle img-fluid" />
                     </div>                                
                       <div className="name mt-2">
@@ -130,7 +131,7 @@ function Testimonial() {
                       <br />                          
                       <div className="d-flex justify-content-evenly">
                         <div className="client-img">
-                          <img src="img/testimonials/client-3.jpg" className="rounded-circle img-fluid" />
+                          <img src="img/testimonials/client-6.jpg" className="rounded-circle img-fluid" />
                         </div>                                
                         <div className="name mt-2">
                         <h5>Esther Zawadi</h5>
@@ -145,10 +146,15 @@ function Testimonial() {
           </div>
           <div className="row text-center mt-5">
             <div className="col-lg-12 col-md-12">
-              <a className="bi bi-chevron-left btn btn-outline-primary" href="#carouselExampleCaptions"
-              data-bs-slide="prev"></a>
-            <a className="bi bi-chevron-right btn btn-outline-primary" href="#carouselExampleCaptions"
-              data-bs-slide="next"></a>
+              <a className="btn btn-outline-primary" href="#carouselExampleCaptions"
+              data-bs-slide="prev">
+                 <ChevronLeft />
+              </a>
+              
+            <a className="btn btn-outline-primary" href="#carouselExampleCaptions"
+              data-bs-slide="next">
+                <ChevronRight />
+              </a>
             </div>
           </div>        
         </div>

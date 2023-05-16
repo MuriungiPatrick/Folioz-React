@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from "react"
+import { Grid, Globe2, PencilSquare, CloudCheck, Laptop, VectorPen} from "react-bootstrap-icons"
 
 
 const Service = () => {
@@ -22,7 +23,9 @@ const Service = () => {
 				<div className="col-md-6 col-lg-4">
 					<div className="services card bg-white rounded-2 shadow p-4">
 						<div className="icon d-flex align-items-center justify-content-center shadow-sm">
-              <span><i className="bi bi-grid"></i></span>
+              <span>
+                <Grid />
+                </span>
             </div>
 						<div className="service-body">
 							<h3 className="mb-3">Brand Identity</h3>
@@ -35,7 +38,9 @@ const Service = () => {
 				<div className="col-md-6 col-lg-4">
 					<div className="services card d-block bg-white rounded-2 shadow p-4">
 						<div className="icon shadow d-flex align-items-center justify-content-center">
-              <span><i className="bi bi-globe2"></i></span>
+              <span>
+                <Globe2 />
+                </span>
             </div>
 						<div className="service-body">
 							<h3 className="mb-3">Digital Marketing </h3>
@@ -48,7 +53,7 @@ const Service = () => {
 				<div className="col-md-6 col-lg-4">
 					<div className="services card d-block bg-white rounded-2 shadow p-4">
 						<div className="icon shadow d-flex align-items-center justify-content-center">
-              <span><i className="bi bi-pencil-square"></i></span>
+              <span><PencilSquare /></span>
             </div>
 						<div className="service-body">
 							<h3 className="mb-3">Web design</h3>
@@ -61,7 +66,7 @@ const Service = () => {
 				<div className="col-md-6 col-lg-4">
 					<div className="services card d-block bg-white rounded-2 shadow p-4">
 						<div className="icon shadow d-flex align-items-center justify-content-center">
-              <span><i className="bi bi-laptop"></i></span>
+              <span><Laptop /></span>
             </div>
 						<div className="service-body">
 							<h3 className="mb-3">IT Consulting</h3>
@@ -74,7 +79,7 @@ const Service = () => {
         <div className="col-md-6 col-lg-4">
 					<div className="services card bg-white rounded-2 shadow p-4">
 						<div className="icon d-flex align-items-center justify-content-center shadow-sm">
-              <span><i className="bi bi-cloud-check"></i></span>
+              <span><CloudCheck /></span>
             </div>
 						<div className="service-body">
 							<h3 className="mb-3">Clowd Computing</h3>
@@ -86,7 +91,7 @@ const Service = () => {
         <div className="col-md-6 col-lg-4">
 					<div className="services card bg-white rounded-2 shadow p-4">
 						<div className="icon d-flex align-items-center justify-content-center shadow-sm">
-              <span><i className="bi bi-vector-pen"></i></span>
+              <span><VectorPen /></span>
             </div>
 						<div className="service-body">
 							<h3 className="mb-3">Graphic Design</h3>
